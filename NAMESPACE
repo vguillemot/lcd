@@ -1,0 +1,18 @@
+useDynLib(lcd)
+importFrom(MASS, mvrnorm, loglm)
+importFrom(ggm, transClos, isAcyclic, topOrder, pa)
+importFrom(igraph, V, "V<-", add_edges, add_vertices, cliques, components,
+				  graph_from_adjacency_matrix, layout_as_tree, make_empty_graph,
+				  plot.igraph, tkplot)
+importFrom(methods, new, show, validObject)
+importFrom(stats, as.formula, cor, cov2cor, pchisq, qchisq, qt, rbeta, rnorm,
+		  runif)
+export(as.freq.tb, comp.pat, comp.skel, compress.freq.tb, draw,
+	get.multinom.dist, get.normal.dist, is.chaingraph, is.separated,
+	learn.complex.multinom, learn.complex.norm, learn.mec.multinom,
+	learn.mec.norm, learn.skeleton.multinom, learn.skeleton.norm,
+	learn.v, maxcard.search, moralize, multinom.ci.test,
+	naive.getug.multinom, naive.getug.norm, norm.ci.test, pattern,
+	rmultinom.cg, rnorm.cg, skeleton, tri.ug, ug.to.jtree)
+exportClasses(sep.pair, sep.tree, freq.tb)
+exportMethods(show, all.equal)

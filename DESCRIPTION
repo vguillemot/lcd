@@ -1,0 +1,22 @@
+Package: lcd
+Type: Package
+Title: Learn Chain Graphs via Decomposition
+Version: 1.0.0
+Authors@R: c(
+  person("Zongming", "Ma", role = "aut"),
+  person("Xiangrui", "Meng", role = "aut"),
+  person(
+    "Vincent",
+    "Guillemot", 
+    role = "cre",
+    email = "contact@vincentguillemot.fr"))
+Depends: R (>= 3.6.0)
+Imports: MASS, ggm, igraph, methods, stats
+Description: Functions for learning chain graphs (and as a special
+        case, Bayesian networks) via the decomposition approach.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.0
