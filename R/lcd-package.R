@@ -73,21 +73,14 @@ NULL
 
 #' Structural learning of chain graphs via the decomposition approach
 #' 
-#' This package implements the algorithms for learning chain graphs (and as a
-#' special case, Bayesian networks) via the decomposition approach as described
-#' in Ma, Xie and Geng (2008)and Xie, Geng and Zhao (2006). The correctness of
-#' the algorithms is given in the above cited paper.
-#' 
-#' The algorithms are \emph{constraint-based} method: the actual learning
-#' procedure depends on testing statistical significances. See the learning
-#' functions for the particular tests we used in the implementation.
-#' 
-#' Currently, the package supports learning with continuous and discrete data,
-#' but not the mix of them.
-#' 
-#' The package also provides some utility functions for graph manipulation,
-#' frequency table construction and compression and random distribution and
-#' random sample generation from chain graphs.
+#' This package implements constraint-based algorithms for learning chain
+#' graphs, including Bayesian networks and Markov networks, from continuous or
+#' discrete data. Following Ma et al. (2008)
+#' <https://jmlr.org/papers/v9/ma08a.html>, it decomposes the learning problem
+#' into smaller subproblems and provides algorithms for skeleton recovery and
+#' edge orientation, without requiring complete separators. The package also
+#' provides tools for graph manipulation, conditional independence testing,
+#' and sampling from chain-graph models.
 #' 
 #' 
 #' @name lcd-package
@@ -381,6 +374,5 @@ NULL
 #' @usage data(toy.graph)
 #' @keywords datasets
 NULL
-
 
 

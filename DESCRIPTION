@@ -12,8 +12,14 @@ Authors@R: c(
     email = "contact@vincentguillemot.fr"))
 Depends: R (>= 3.6.0)
 Imports: MASS, ggm, igraph, methods, stats
-Description: Functions for learning chain graphs (and as a special
-        case, Bayesian networks) via the decomposition approach.
+Description: Implements constraint-based algorithms for learning chain graphs,
+        including Bayesian networks and Markov networks, from continuous or
+        discrete data. Following Ma et al. (2008)
+        <https://jmlr.org/papers/v9/ma08a.html>, it decomposes the learning
+        problem into smaller subproblems and provides algorithms for skeleton
+        recovery and edge orientation, without requiring complete separators.
+        The package also provides tools for graph manipulation, conditional
+        independence testing, and sampling from chain-graph models.
 License: GPL (>= 2)
 URL: https://github.com/vguillemot/lcd
 BugReports: https://github.com/vguillemot/lcd/issues
