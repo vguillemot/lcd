@@ -80,6 +80,14 @@ chain graphs via decomposition. \emph{J. Mach. Learn. Res.,} \bold{9},
 Xie, X., Geng, Z. and Zhao, Q. (2006). Decomposition of structural learning
 about directed acyclic graphs. \emph{Artif.  Intell.,} \bold{170}, 422-439.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/vguillemot/lcd}
+  \item Report bugs at \url{https://github.com/vguillemot/lcd/issues}
+}
+
+}
 \author{
 Zongming Ma\cr Department of Statistics\cr The Wharton School,
 University of Pennsylvania, USA\cr \email{zongming.ma@gmail.com}

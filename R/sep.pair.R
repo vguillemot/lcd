@@ -4,10 +4,12 @@ setClass("sep.pair",
          representation(u="character", v="character", s="character"),
          package = "lcd")
 
+#' @export
 setMethod("show", signature("sep.pair"),
           function(object) print(c(u=object@u, v=object@v, s=object@s))
           )
 
+#' @export
 setMethod("all.equal", signature(target="sep.pair", current="sep.pair"),
           function(target, current) {
               if(target@u == current@u) {

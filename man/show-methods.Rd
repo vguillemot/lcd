@@ -5,6 +5,10 @@
 \alias{show-methods}
 \alias{show,sep.pair-method}
 \title{Show method for sep.pair class}
+\value{
+No return value, called for side effects (prints the
+\code{sep.pair} object to the console).
+}
 \description{
 Method for showing a \code{sep.pair} object.
 }

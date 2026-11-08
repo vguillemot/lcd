@@ -34,6 +34,9 @@ NULL
 #' 
 #' \item{target = "sep.pair", current = "sep.pair"}{ Returns \code{TRUE} if
 #' \code{target} and \code{current} have the same (\code{u},\code{v}) set. } }
+#' @return A single logical value: \code{TRUE} if \code{target} and
+#' \code{current} have the same (\code{u},\code{v}) set (regardless of
+#' order), \code{FALSE} otherwise.
 #' @keywords methods
 NULL
 
@@ -90,6 +93,44 @@ NULL
 #' @name lcd-package
 #' @aliases lcd-package lcd
 #' @keywords internal
+#' @useDynLib lcd
+#' @importFrom MASS mvrnorm loglm
+#' @importFrom ggm transClos isAcyclic topOrder pa
+#' @importFrom igraph V V<- add_edges add_vertices cliques components
+#'   graph_from_adjacency_matrix layout_as_tree make_empty_graph plot.igraph tkplot
+#' @importFrom methods new show validObject
+#' @importFrom stats as.formula cor cov2cor pchisq qchisq qt rbeta rnorm runif
+#' @export as.freq.tb
+#' @export comp.pat
+#' @export comp.skel
+#' @export compress.freq.tb
+#' @export draw
+#' @export get.multinom.dist
+#' @export get.normal.dist
+#' @export is.chaingraph
+#' @export is.separated
+#' @export learn.complex.multinom
+#' @export learn.complex.norm
+#' @export learn.mec.multinom
+#' @export learn.mec.norm
+#' @export learn.skeleton.multinom
+#' @export learn.skeleton.norm
+#' @export learn.v
+#' @export maxcard.search
+#' @export moralize
+#' @export multinom.ci.test
+#' @export naive.getug.multinom
+#' @export naive.getug.norm
+#' @export norm.ci.test
+#' @export pattern
+#' @export rmultinom.cg
+#' @export rnorm.cg
+#' @export skeleton
+#' @export tri.ug
+#' @export ug.to.jtree
+#' @exportClass sep.pair
+#' @exportClass sep.tree
+#' @exportClass freq.tb
 #' @section List of functions: The package has the following categories of
 #' functions.  \itemize{ \item Chain graph/Bayesian network learning:
 #' \code{\link{learn.mec.norm}}, \code{\link{learn.mec.multinom}},
@@ -321,6 +362,8 @@ NULL
 #' 
 #' \item{object = "sep.pair"}{ Successively prints out the pairs (\code{u},
 #' \code{v}) and their separator \code{s}. } }
+#' @return No return value, called for side effects (prints the
+#' \code{sep.pair} object to the console).
 #' @keywords methods
 NULL
 

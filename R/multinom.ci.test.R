@@ -24,7 +24,7 @@
 #' @keywords htest multivariate
  `multinom.ci.test` <- function(tb, u, v, cond = c())
 {
-    if(class(tb) != "freq.tb")
+    if(!inherits(tb, "freq.tb"))
         stop("tb should be an object of class freq.tb!")
     if(!all(is.na(match(c(u,v), cond))))
         stop("The conditional set should not contain u or v!")
